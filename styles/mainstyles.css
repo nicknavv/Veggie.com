@@ -25,6 +25,25 @@ section {
   padding: 2rem;
 }
 
+.btn {
+  font-size: 1rem;
+  color: #ffffff;
+  background: #00c500;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 800;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 0.5rem;
+}
+
 /* Header Styles */
 header {
   position: fixed;
@@ -135,25 +154,7 @@ header.sticky .navigation li a:hover {
 .banner .content p {
   font-size: 1rem;
   color: #ffffff;
-}
-
-.banner .content .btn {
-  font-size: 1rem;
-  color: #ffffff;
-  background: #00c500;
-  display: inline-block;
-  padding: 1rem;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 800;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.banner .content .btn:hover {
-  letter-spacing: 0.5rem;
+  margin: 2rem 0;
 }
 
 /* About Banner Styles */
@@ -218,6 +219,18 @@ header.sticky .navigation li a:hover {
           flex-direction: column;
 }
 
+.title .titleText {
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title .titleText span {
+  color: #00c500;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
 /* Menu Section Styles */
 .menu .content {
   display: -webkit-box;
@@ -258,4 +271,12 @@ header.sticky .navigation li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-/*# sourceMappingURL=mainstyes.css.map */
+
+.content .box .text {
+  padding: 15px 0 5px;
+}
+
+.content .box .text h3 {
+  color: #202020;
+}
+/*# sourceMappingURL=mainstyles.css.map */
