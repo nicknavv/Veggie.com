@@ -12,4 +12,34 @@
     <title>Veggie.com | Home</title>
     <link rel="stylesheet" href="styles/mainstyes.css" />
   </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Veggie<span>.</span>com</a>
+      <ul class="navigation">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#chefs">Our Chefs</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Always Choose <span>Green</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+          quam ex voluptas quod suscipit expedita.
+        </p>
+        <a href="#" class="btn">View Our Menu</a>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>

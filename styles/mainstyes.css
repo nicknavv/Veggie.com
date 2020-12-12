@@ -5,5 +5,129 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+p {
+  font-weight: 400;
+  color: #202020;
+  margin-top: 1rem;
+}
+
+body {
+  letter-spacing: 1px;
+  min-height: 100%;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header .logo span {
+  color: #00c500;
+}
+
+header .navigation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/Images/vegpizza.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.banner .content h2 span {
+  padding: 1rem;
+  display: inline-block;
+  font-weight: 700;
+  color: #00c500;
+  background: white;
+}
+
+.banner .content p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.banner .content .btn {
+  font-size: 1rem;
+  color: #ffffff;
+  background: #00c500;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 800;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.banner .content .btn:hover {
+  letter-spacing: 0.5rem;
 }
 /*# sourceMappingURL=mainstyes.css.map */

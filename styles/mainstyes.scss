@@ -1,9 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
+$base-green: rgb(0, 197, 0);
+
 /* Reset Styles */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+p {
+  font-weight: 400;
+  color: #202020;
+  margin-top: 1rem;
+}
+
+body {
+  letter-spacing: 1px;
+  min-height: 100%;
+}
+
+/* Header Styles */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+
+  .logo {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+
+    span {
+      color: $base-green;
+    }
+  }
+
+  .navigation {
+    position: relative;
+    display: flex;
+
+    li {
+      list-style: none;
+      margin-left: 3rem;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Banner Styles */
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/Images/vegpizza.jpg);
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    color: #ffffff;
+
+    span {
+      padding: 1rem;
+      display: inline-block;
+      font-weight: 700;
+      color: $base-green;
+      background: white;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .btn {
+    font-size: 1rem;
+    color: #ffffff;
+    background: $base-green;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 800;
+    transition: 0.5s;
+
+    &:hover {
+      letter-spacing: 0.5rem;
+    }
+  }
 }
