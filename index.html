@@ -11,9 +11,10 @@
     <meta name="keywords" content="width=device-width, initial scale=1.0" />
     <title>Veggie.com | Home</title>
     <link rel="stylesheet" href="styles/mainstyes.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="sticky">
       <a href="#" class="logo">Veggie<span>.</span>com</a>
       <ul class="navigation">
         <li><a href="#banner">Home</a></li>
@@ -34,12 +35,5 @@
         <a href="#" class="btn">View Our Menu</a>
       </div>
     </section>
-
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-      });
-    </script>
   </body>
 </html>

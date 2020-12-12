@@ -22,10 +22,16 @@ p {
 
 body {
   letter-spacing: 1px;
-  min-height: 100%;
+  min-height: 1000px;
 }
 
 /* Header Styles */
+
+.sticky {
+  padding: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background: white;
+}
 
 header {
   position: fixed;
