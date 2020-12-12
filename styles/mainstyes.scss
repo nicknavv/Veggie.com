@@ -27,10 +27,22 @@ body {
 
 /* Header Styles */
 
+header.sticky .navigation li a {
+  color: #202020;
+  &:hover {
+    text-decoration: underline;
+    color: green;
+  }
+}
+
 .sticky {
   padding: 1rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  background: white;
+  background: #ffffff;
+
+  .logo {
+    color: #202020;
+  }
 }
 
 header {

@@ -22,11 +22,24 @@ body {
 }
 
 /* Header Styles */
+header.sticky .navigation li a {
+  color: #202020;
+}
+
+header.sticky .navigation li a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
 .sticky {
   padding: 1rem;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  background: white;
+  background: #ffffff;
+}
+
+.sticky .logo {
+  color: #202020;
 }
 
 header {
