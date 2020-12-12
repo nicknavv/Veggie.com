@@ -21,27 +21,11 @@ body {
   min-height: 1000px;
 }
 
+section {
+  padding: 2rem;
+}
+
 /* Header Styles */
-header.sticky .navigation li a {
-  color: #202020;
-}
-
-header.sticky .navigation li a:hover {
-  text-decoration: underline;
-  color: green;
-}
-
-.sticky {
-  padding: 1rem;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  background: #ffffff;
-}
-
-.sticky .logo {
-  color: #202020;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -89,6 +73,27 @@ header .navigation li a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
+}
+
+/* Sticky Header Styles */
+header.sticky .navigation li a {
+  color: #202020;
+}
+
+header.sticky .navigation li a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.sticky {
+  padding: 1rem;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.sticky .logo {
+  color: #202020;
 }
 
 /* Banner Styles */
@@ -149,5 +154,50 @@ header .navigation li a {
 
 .banner .content .btn:hover {
   letter-spacing: 0.5rem;
+}
+
+/* About Banner Styles */
+.row {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row .col50 {
+  position: relative;
+  width: 48%;
+}
+
+.row .col50 .titleText {
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.row .col50 .titleText span {
+  color: #00c500;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.row .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.row .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=mainstyes.css.map */
