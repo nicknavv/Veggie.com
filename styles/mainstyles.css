@@ -11,14 +11,14 @@
 
 /* Global Styles */
 p {
-  font-weight: 400;
+  font-weight: 600;
   color: #202020;
   margin-top: 1rem;
 }
 
 body {
   letter-spacing: 1px;
-  min-height: 1000px;
+  min-height: 100%;
 }
 
 section {
@@ -50,7 +50,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 10000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +63,9 @@ header {
           align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background: #202020;
+  border-bottom: 10px solid #00c500;
+  /* Nav Styles */
 }
 
 header .logo {
@@ -94,25 +97,29 @@ header .navigation li a {
   font-weight: 700;
 }
 
+header .navigation li a:hover {
+  color: #00c500;
+}
+
 /* Sticky Header Styles */
 header.sticky .navigation li a {
-  color: #202020;
+  color: #ffffff;
 }
 
 header.sticky .navigation li a:hover {
-  text-decoration: underline;
-  color: green;
+  text-decoration: none;
+  color: #00c500;
 }
 
 .sticky {
   padding: 1rem;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  background: #ffffff;
+  background: #202020;
 }
 
 .sticky .logo {
-  color: #202020;
+  color: #ffffff;
 }
 
 /* Banner Styles */
@@ -330,24 +337,4 @@ header.sticky .navigation li a:hover {
 }
 
 /* Testimonials Section Styles */
-.testmonials {
-  background: url(/Images/pexels-lukas-616401.jpg);
-  background-size: cover;
-}
-
-.testmonials .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 3rem;
-}
 /*# sourceMappingURL=mainstyles.css.map */

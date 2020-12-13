@@ -15,14 +15,14 @@ $base-green: rgb(0, 197, 0);
 /* Global Styles */
 
 p {
-  font-weight: 400;
+  font-weight: 600;
   color: #202020;
   margin-top: 1rem;
 }
 
 body {
   letter-spacing: 1px;
-  min-height: 1000px;
+  min-height: 100%;
 }
 
 section {
@@ -54,12 +54,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+  background: #202020;
+  border-bottom: 10px solid $base-green;
 
   .logo {
     color: #ffffff;
@@ -71,6 +73,8 @@ header {
       color: $base-green;
     }
   }
+
+  /* Nav Styles */
 
   .navigation {
     position: relative;
@@ -84,6 +88,10 @@ header {
         text-decoration: none;
         color: #ffffff;
         font-weight: 700;
+
+        &:hover {
+          color: $base-green;
+        }
       }
     }
   }
@@ -92,20 +100,20 @@ header {
 /* Sticky Header Styles */
 
 header.sticky .navigation li a {
-  color: #202020;
+  color: #ffffff;
   &:hover {
-    text-decoration: underline;
-    color: green;
+    text-decoration: none;
+    color: $base-green;
   }
 }
 
 .sticky {
   padding: 1rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  background: #ffffff;
+  background: #202020;
 
   .logo {
-    color: #202020;
+    color: #ffffff;
   }
 }
 
@@ -287,16 +295,3 @@ header.sticky .navigation li a {
 }
 
 /* Testimonials Section Styles */
-
-.testmonials {
-  background: url(/Images/pexels-lukas-616401.jpg);
-  background-size: cover;
-
-  .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 3rem;
-  }
-}
