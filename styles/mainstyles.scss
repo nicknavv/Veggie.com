@@ -41,6 +41,8 @@ section {
   letter-spacing: 2px;
   font-weight: 800;
   transition: 0.5s;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 
   &:hover {
     letter-spacing: 0.5rem;
@@ -109,7 +111,6 @@ header.sticky .navigation li a {
 
 .sticky {
   padding: 1rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   background: #202020;
 
   .logo {
@@ -128,29 +129,32 @@ header.sticky .navigation li a {
   align-items: center;
   background: url(/Images/vegpizza.jpg);
   background-size: cover;
-}
 
-.banner .content {
-  max-width: 900px;
-  text-align: center;
+  .content {
+    max-width: 900px;
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 125px;
+    background: #202020;
+    border: 5px solid $base-green;
+    h2 {
+      font-size: 4rem;
+      color: #ffffff;
 
-  h2 {
-    font-size: 4rem;
-    color: #ffffff;
-
-    span {
-      padding: 1rem;
-      display: inline-block;
-      font-weight: 700;
-      color: $base-green;
-      background: white;
+      span {
+        padding: 1rem;
+        display: inline-block;
+        font-weight: 700;
+        color: $base-green;
+        background: white;
+      }
     }
-  }
 
-  p {
-    font-size: 1rem;
-    color: #ffffff;
-    margin: 2rem 0;
+    p {
+      font-size: 1rem;
+      color: #ffffff;
+      margin: 2rem 0;
+    }
   }
 }
 
