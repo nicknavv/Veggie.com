@@ -185,6 +185,7 @@ header.sticky .navigation li a {
   position: relative;
   width: 100%;
   height: 400px;
+  box-shadow: 0 5px 35px $base-green;
 
   img {
     position: absolute;
@@ -230,7 +231,7 @@ header.sticky .navigation li a {
   width: 340px;
   margin: 20px;
   border: 15px solid #fff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 35px $base-green;
 
   .imgBx {
     position: relative;
@@ -270,7 +271,7 @@ header.sticky .navigation li a {
   width: 250px;
   margin: 15px;
   border: 15px solid #fff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 35px $base-green;
 
   .text {
     padding: 15px 0 5px;
@@ -299,9 +300,6 @@ header.sticky .navigation li a {
 /* Testimonials Section Styles */
 
 .testimonials {
-  background: url(/Images/pexels-ray-piedra-1565982.jpg);
-  background-size: cover;
-
   .content {
     display: flex;
     justify-content: center;
@@ -313,8 +311,45 @@ header.sticky .navigation li a {
       margin: 20px;
       padding: 40px;
       background: white;
+      display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      box-shadow: 0 5px 35px $base-green;
+
+      .stars {
+        margin-top: 2rem;
+      }
+
+      .imgBx {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .text {
+        text-align: center;
+
+        h3 {
+          margin-top: 2rem;
+        }
+
+        p {
+          font-weight: 500;
+          font-style: italic;
+        }
+      }
     }
   }
 }

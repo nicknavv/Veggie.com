@@ -199,6 +199,8 @@ header.sticky .navigation li a:hover {
   position: relative;
   width: 100%;
   height: 400px;
+  -webkit-box-shadow: 0 5px 35px #00c500;
+          box-shadow: 0 5px 35px #00c500;
 }
 
 .row .imgBx img {
@@ -261,8 +263,8 @@ header.sticky .navigation li a:hover {
   width: 340px;
   margin: 20px;
   border: 15px solid #fff;
-  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 35px #00c500;
+          box-shadow: 0 5px 35px #00c500;
 }
 
 .content .box .imgBx {
@@ -310,8 +312,8 @@ header.sticky .navigation li a:hover {
   width: 250px;
   margin: 15px;
   border: 15px solid #fff;
-  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 35px #00c500;
+          box-shadow: 0 5px 35px #00c500;
 }
 
 .chef .content .box .text {
@@ -339,11 +341,6 @@ header.sticky .navigation li a:hover {
 }
 
 /* Testimonials Section Styles */
-.testimonials {
-  background: url(/Images/pexels-ray-piedra-1565982.jpg);
-  background-size: cover;
-}
-
 .testimonials .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,11 +358,55 @@ header.sticky .navigation li a:hover {
   margin: 20px;
   padding: 40px;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 5px 35px #00c500;
+          box-shadow: 0 5px 35px #00c500;
+}
+
+.testimonials .content .box .stars {
+  margin-top: 2rem;
+}
+
+.testimonials .content .box .imgBx {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials .content .box .text {
+  text-align: center;
+}
+
+.testimonials .content .box .text h3 {
+  margin-top: 2rem;
+}
+
+.testimonials .content .box .text p {
+  font-weight: 500;
+  font-style: italic;
 }
 /*# sourceMappingURL=mainstyles.css.map */
