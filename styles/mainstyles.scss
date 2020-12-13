@@ -354,3 +354,36 @@ header.sticky .navigation li a {
     }
   }
 }
+
+/* Contact form Styles */
+
+.contactForm {
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 5px 35px $base-green;
+  max-width: 500px;
+  margin-top: 50px;
+
+  h3 {
+    color: #202020;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .inputBx {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid $base-green;
+      padding: 10px;
+      color: #202020;
+      outline: none;
+      resize: none;
+    }
+  }
+}
