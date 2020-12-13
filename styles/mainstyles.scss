@@ -41,8 +41,6 @@ section {
   letter-spacing: 2px;
   font-weight: 800;
   transition: 0.5s;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 
   &:hover {
     letter-spacing: 0.5rem;
@@ -133,10 +131,10 @@ header.sticky .navigation li a {
   .content {
     max-width: 900px;
     text-align: center;
-    border-radius: 1rem;
     margin-top: 125px;
     background: #202020;
     border: 5px solid $base-green;
+    padding: 2rem;
     h2 {
       font-size: 4rem;
       color: #ffffff;
