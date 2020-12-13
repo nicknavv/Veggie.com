@@ -339,4 +339,33 @@ header.sticky .navigation li a:hover {
 }
 
 /* Testimonials Section Styles */
+.testimonials {
+  background: url(/Images/pexels-ray-piedra-1565982.jpg);
+  background-size: cover;
+}
+
+.testimonials .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.testimonials .content .box {
+  width: 340px;
+  margin: 20px;
+  padding: 40px;
+  background: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=mainstyles.css.map */

@@ -297,3 +297,24 @@ header.sticky .navigation li a {
 }
 
 /* Testimonials Section Styles */
+
+.testimonials {
+  background: url(/Images/pexels-ray-piedra-1565982.jpg);
+  background-size: cover;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    .box {
+      width: 340px;
+      margin: 20px;
+      padding: 40px;
+      background: white;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
