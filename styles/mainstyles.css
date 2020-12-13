@@ -305,6 +305,10 @@ header.sticky .navigation li a:hover {
           box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
 }
 
+.chef .content .box .text {
+  padding: 15px 0 5px;
+}
+
 .chef .content .box .text h3 {
   font-weight: 500;
 }
@@ -323,5 +327,27 @@ header.sticky .navigation li a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Testimonials Section Styles */
+.testmonials {
+  background: url(/Images/pexels-lukas-616401.jpg);
+  background-size: cover;
+}
+
+.testmonials .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=mainstyles.css.map */
