@@ -402,3 +402,12 @@ header.sticky .navigation li a {
     }
   }
 }
+
+.copyright {
+  padding: 1rem;
+  background: $base-green;
+  text-align: center;
+  p {
+    color: #ffffff;
+  }
+}

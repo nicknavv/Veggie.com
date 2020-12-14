@@ -460,4 +460,14 @@ header.sticky .navigation li a:hover {
   cursor: pointer;
   border: none;
 }
+
+.copyright {
+  padding: 1rem;
+  background: #00c500;
+  text-align: center;
+}
+
+.copyright p {
+  color: #ffffff;
+}
 /*# sourceMappingURL=mainstyles.css.map */
