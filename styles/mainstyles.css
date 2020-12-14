@@ -263,8 +263,8 @@ header.sticky .navigation li a:hover {
   width: 340px;
   margin: 20px;
   border: 15px solid #fff;
-  -webkit-box-shadow: 0 5px 35px #00c500;
-          box-shadow: 0 5px 35px #00c500;
+  -webkit-box-shadow: 0 10px 35px #00c500;
+          box-shadow: 0 10px 35px #00c500;
 }
 
 .content .box .imgBx {
@@ -419,6 +419,8 @@ header.sticky .navigation li a:hover {
           box-shadow: 0 5px 35px #00c500;
   max-width: 500px;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contactForm h3 {
@@ -442,5 +444,20 @@ header.sticky .navigation li a:hover {
   color: #202020;
   outline: none;
   resize: none;
+}
+
+.contactForm .inputBx input[type="submit"] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #00c500;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
 }
 /*# sourceMappingURL=mainstyles.css.map */

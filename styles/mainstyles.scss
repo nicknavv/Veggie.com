@@ -218,7 +218,6 @@ header.sticky .navigation li a {
 }
 
 /* Menu Section Styles */
-
 .menu .content {
   display: flex;
   justify-content: center;
@@ -231,7 +230,7 @@ header.sticky .navigation li a {
   width: 340px;
   margin: 20px;
   border: 15px solid #fff;
-  box-shadow: 0 5px 35px $base-green;
+  box-shadow: 0 10px 35px $base-green;
 
   .imgBx {
     position: relative;
@@ -363,6 +362,8 @@ header.sticky .navigation li a {
   box-shadow: 0 5px 35px $base-green;
   max-width: 500px;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   h3 {
     color: #202020;
@@ -384,6 +385,20 @@ header.sticky .navigation li a {
       color: #202020;
       outline: none;
       resize: none;
+    }
+
+    input[type="submit"] {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: $base-green;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      cursor: pointer;
+      border: none;
     }
   }
 }
