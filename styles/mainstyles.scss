@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 $base-green: rgb(0, 197, 0);
-
 /* Reset Styles */
 
 * {
@@ -409,5 +408,27 @@ header.sticky .navigation li a {
   text-align: center;
   p {
     color: #ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 0.5rem;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  .menuToggle {
+    position: realtive;
+    width: 40px;
+    height: 40px;
+    background: url(/Images/toggle.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
 }
