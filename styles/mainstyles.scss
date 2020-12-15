@@ -505,4 +505,20 @@ header.sticky .navigation li a {
   }
 
   /* Chefs section media queries */
+
+  .chef .titleText {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .chef p {
+    text-align: center;
+  }
+
+  .chef .content .box {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+  }
 }
