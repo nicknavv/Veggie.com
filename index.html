@@ -11,15 +11,13 @@
     <meta name="keywords" content="width=device-width, initial scale=1.0" />
     <title>Veggie.com | Home</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="styles/mainstyles.css" />
-    <script src="app.js" defer></script>
+    <script src="app.js" async></script>
   </head>
   <body>
     <header class="sticky">
       <a href="#" class="logo">EARTH<span>BISTRO</span></a>
-      <div class="menuToggle"></div>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
       <ul class="navigation">
         <li><a href="#banner">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -247,8 +245,16 @@
       </div>
     </section>
 
+
     <div class="copyright">
       <p>&#169; 2020 Earth Bistro all rights reserved. Website by nextapp. </p>
     </div>
+    <script type=text/javascript>
+    
+  function toggleMenu () {
+    const menuToggle = document.querySelector('.menuToggle');
+    menuToggle.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
