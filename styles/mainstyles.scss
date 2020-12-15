@@ -432,7 +432,6 @@ header.sticky .navigation li a {
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(1);
   }
 
   header .navigation {
@@ -449,18 +448,19 @@ header.sticky .navigation li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #ffffff;
+    background: #202020;
+    border-bottom: 5px solid $base-green;
   }
   header .navigation.active li {
     margin-left: 0;
-    line-height: 3rem;
+    padding-top: 1rem;
+    line-height: 2rem;
   }
 
   header .navigation.active li a {
     text-decoration: none;
-    color: #202020;
+    color: #ffffff;
     font-weight: 400;
-    font-size: 2rem;
 
     &:active {
       background: $base-green;
@@ -474,4 +474,35 @@ header.sticky .navigation li a {
     font-size: 2rem;
     line-height: 3rem;
   }
+
+  /* About media query styles */
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 2rem;
+  }
+
+  /* Menu media query styles */
+
+  .menu .title {
+    text-align: center;
+  }
+
+  .menu .box {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Chefs section media queries */
 }
