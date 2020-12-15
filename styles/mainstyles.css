@@ -575,5 +575,19 @@ header.sticky .navigation li a:hover {
     margin-top: 0.5rem;
     margin-bottom: 4rem;
   }
+  /* Testimonial media queries */
+  .testimonials .titleText {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .testimonials p {
+    text-align: center;
+  }
+  .testimonials .content .box {
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+  }
 }
 /*# sourceMappingURL=mainstyles.css.map */
