@@ -476,9 +476,6 @@ header.sticky .navigation li a:hover {
   header.sticky {
     padding: 0.5rem;
   }
-  header .navigation {
-    display: none;
-  }
   /* Side Menu Mobile Styles */
   .menuToggle {
     position: relative;
@@ -489,12 +486,54 @@ header.sticky .navigation li a:hover {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    z-index: 10000000;
   }
   .menuToggle.active {
     background: url(/Images/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  header .navigation {
+    display: none;
+  }
+  header .navigation.active {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #ffffff;
+  }
+  header .navigation.active li {
+    margin-left: 0;
+    line-height: 3rem;
+  }
+  header .navigation.active li a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  header .navigation.active li a:active {
+    background: #00c500;
+    color: white;
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=mainstyles.css.map */
